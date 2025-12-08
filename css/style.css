@@ -1,0 +1,279 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+}
+.navbar {
+    background: #ffb300;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    height: 100vh;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+
+}
+
+.navbar .nav-link:hover {
+    color: #ffe9d6;
+}
+
+/* ======== CONTEÚDO CENTRAL ======== */
+.main {
+    padding: 35px 45px;
+    overflow-y: auto;
+}
+
+.banner h1{
+    font-weight: bold;
+}
+/* Seções */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #ff7043;
+    margin-bottom: 15px;
+    margin-top: 25px;
+
+}
+
+/* Cards de produtos */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 15px;
+    flex: 1;
+    min-width: 200px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 70%;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: medium;
+}
+
+/* ======== PAINEL DIREITO ======== */
+.right-panel {
+    background: #fff;
+    border-left: 2px solid #ffb300;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.saldo {
+    background: #fff8e1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.saldo button {
+    background: #ffb300;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.endereco button {
+    background: #ff7043;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrinho ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carrinho li {
+    margin-bottom: 6px;
+}
+
+.carrinho hr {
+    margin: 10px 0;
+}
+
+.btn-finalizar {
+    background: #ffb300;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.total {
+    text-align: right;
+}
+
+/* PROMOÇÃO */
+.promocao {
+    background-color: #ffb300;
+    padding: 60px 0;
+}
+.promocao h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.promocao-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.promocao-conteudo img {
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.promocao-info {
+    text-align: left;
+}
+.promocao-info p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+.promocao-info .antig-preco {
+    text-decoration: line-through;
+    color: #333;
+}
+.promocao-info .novo-preco {
+    color: #d62828;
+    font-weight: 700;
+}
+.promocao-info button {
+    background-color: #d62828;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* RODAPÉ  */
+.rodape {
+    background-color: #b11925;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff7e6;
+    color: #333;
+    margin: 0;
+}
+
+.navbar {
+    background: #ffb300;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.sobre-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 40px;
+    margin-bottom: 60px;
+}
+
+.sobre-texto {
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+.sobre-texto h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff7043;
+}
+
+.sobre-texto p {
+    margin-bottom: 12px; /* espaçamento menor entre parágrafos */
+}
+
+.btn-produtos {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.btn-produtos a {
+    background: #b11925;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.btn-produtos a:hover {
+    background: #8f0f1d;
+}
+
+.rodape {
+    margin-top: 40px;
+    background: #b11925;
+    padding: 25px 0;
+    color: white;
+}
+
+.redes i {
+    font-size: 1.5rem;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.redes i:hover {
+    color: #ffd6bc;
+}
