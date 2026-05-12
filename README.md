@@ -26,12 +26,12 @@ O back-end completo não foi implementado, pois o foco principal do projeto esta
 
 ## Funcionalidades Desenvolvidas
 
-✔ Navegação entre páginas  
-✔ Visualização do cardápio  
-✔ Estrutura visual de pedidos  
-✔ Interface de carrinho de compras  
-✔ Layout responsivo com Bootstrap  
-✔ Organização de produtos em listas utilizando PHP e tabelas com HTML
+* Navegação entre páginas  
+* Visualização do cardápio  
+* Estrutura visual de pedidos  
+* Interface de carrinho de compras  
+* Layout responsivo com Bootstrap  
+* Organização de produtos em listas utilizando PHP e tabelas com HTML
 
 ---
 
