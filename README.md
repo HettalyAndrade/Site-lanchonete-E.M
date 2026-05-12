@@ -11,7 +11,7 @@ O projeto foi criado com o objetivo de praticar a construção de interfaces web
 - HTML5
 - CSS3
 - Bootstrap
-- PHP
+- PHP (8.4.12)
 - Git e GitHub
 
 ---
@@ -63,15 +63,15 @@ Página com informações sobre a proposta do projeto e da lanchonete.
 
 ### Página Inicial
 
-![Página Inicial](png/inicio.png)
+![Página Inicial](png/inicio.jpeg)
 
 ### Página de Cardápio
 
-![Cardápio](png/cardapio.png)
+![Cardápio](png/cardapio.jpeg)
 
 ### Página Sobre Nós
 
-![Sobre Nós](png/sobrenos.png)
+![Sobre Nós](png/sobrenos.jpeg)
 
 ---
 
