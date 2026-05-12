@@ -1,39 +1,42 @@
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #ffffff;
+    background: #fff7e6;
     color: #333;
     margin: 0;
 }
+
+/* NAVBAR */
 .navbar {
     background: #ffb300;
-}
-
-.layout {
-    display: grid;
-    grid-template-columns: 1fr 280px;
-    height: 100vh;
 }
 
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
-
 }
 
 .navbar .nav-link:hover {
     color: #ffe9d6;
 }
 
-/* ======== CONTEÚDO CENTRAL ======== */
+/* LAYOUT */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    min-height: 100vh;
+}
+
+/* CONTEÚDO */
 .main {
     padding: 35px 45px;
     overflow-y: auto;
 }
 
-.banner h1{
+.banner h1 {
     font-weight: bold;
 }
-/* Seções */
+
+/* SEÇÕES */
 .section {
     margin-bottom: 40px;
 }
@@ -42,10 +45,9 @@ body {
     color: #ff7043;
     margin-bottom: 15px;
     margin-top: 25px;
-
 }
 
-/* Cards de produtos */
+/* CARDS */
 .cards {
     display: flex;
     gap: 20px;
@@ -69,6 +71,8 @@ body {
 
 .card img {
     width: 70%;
+    max-width: 100%;
+    height: auto;
     border-radius: 12px;
 }
 
@@ -77,7 +81,7 @@ body {
     font-size: medium;
 }
 
-/* ======== PAINEL DIREITO ======== */
+/* PAINEL DIREITO */
 .right-panel {
     background: #fff;
     border-left: 2px solid #ffb300;
@@ -149,11 +153,13 @@ body {
     background-color: #ffb300;
     padding: 60px 0;
 }
+
 .promocao h2 {
     text-align: center;
     font-weight: 700;
     margin-bottom: 50px;
 }
+
 .promocao-conteudo {
     display: flex;
     align-items: center;
@@ -161,26 +167,33 @@ body {
     flex-wrap: wrap;
     gap: 40px;
 }
+
 .promocao-conteudo img {
     max-width: 300px;
+    width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 .promocao-info {
     text-align: left;
 }
+
 .promocao-info p {
     margin: 5px 0;
     font-size: 1.1rem;
 }
+
 .promocao-info .antig-preco {
     text-decoration: line-through;
     color: #333;
 }
+
 .promocao-info .novo-preco {
     color: #d62828;
     font-weight: 700;
 }
+
 .promocao-info button {
     background-color: #d62828;
     color: white;
@@ -191,31 +204,7 @@ body {
     margin-top: 10px;
 }
 
-/* RODAPÉ  */
-.rodape {
-    background-color: #b11925;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.95rem;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    background: #fff7e6;
-    color: #333;
-    margin: 0;
-}
-
-.navbar {
-    background: #ffb300;
-}
-
-.logo {
-    font-weight: 800;
-    font-size: 1.8rem;
-}
-
+/* SOBRE */
 .sobre-container {
     max-width: 900px;
     margin: auto;
@@ -237,9 +226,10 @@ body {
 }
 
 .sobre-texto p {
-    margin-bottom: 12px; /* espaçamento menor entre parágrafos */
+    margin-bottom: 12px;
 }
 
+/* BOTÃO */
 .btn-produtos {
     display: flex;
     justify-content: center;
@@ -260,11 +250,14 @@ body {
     background: #8f0f1d;
 }
 
+/* RODAPÉ */
 .rodape {
-    margin-top: 40px;
-    background: #b11925;
-    padding: 25px 0;
+    background-color: #b11925;
     color: white;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 40px;
 }
 
 .redes i {
@@ -276,4 +269,56 @@ body {
 
 .redes i:hover {
     color: #ffd6bc;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .right-panel {
+        border-left: none;
+        border-top: 2px solid #ffb300;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .promocao-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promocao-info {
+        text-align: center;
+    }
+
+    .sobre-container {
+        padding: 30px 20px;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
 }
